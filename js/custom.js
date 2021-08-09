@@ -27,6 +27,15 @@ $(document).ready(function() {
   $('select').niceSelect();
 });
 
+$(window).on('load', function() {
+  $('#constructionModalCenter').modal('show');
+});
+
+$('#constructionModalCenter').modal({
+  backdrop: 'static',
+  keyboard: false
+})
+
 var review = $('.client_review_part');
 if (review.length) {
   review.owlCarousel({
